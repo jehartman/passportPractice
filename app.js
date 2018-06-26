@@ -73,6 +73,7 @@ app.use(function (req, res, next) {
 		res.locals.error_msg = req.flash('error_msg');
 		//the line below is for passport's own error messages
 		res.locals.error = req.flash('error');
+		res.locals.user = req.user || null;
 		next();
 });
 
