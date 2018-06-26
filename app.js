@@ -73,10 +73,10 @@ app.use(function (req, res, next) {
 		res.locals.error_msg = req.flash('error_msg');
 		//the line below is for passport's own error messages
 		res.locals.error = req.flash('error');
+		//"if the user is there" (where?) "we'll be able to access the user from anywhere, if not this will just be null" -- i don't get this
 		res.locals.user = req.user || null;
 		next();
 });
-
 
 app.use('/', routes);
 app.use('/users', users);
