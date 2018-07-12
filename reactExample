@@ -1,0 +1,19 @@
+class HelloMessage extends React.Component {
+	render() {
+	return <div>Hello {this.props.name}</div>;
+	}
+}
+
+ReactDOM.render(<HelloMessage name='Jane' />, mountNode);
+
+//class is HelloMessage-- class must be different than I think
+//he also called HelloMessage a component, which makes me think that classes are components
+
+//render is the only function that is required in a component (you may include others)
+
+
+//what looks like HTML is JSX, Javascript Syntax Extension-- looks like HTML or XML
+
+//props represents a component property
+
+//mountNode indicates where we want to insert the component in the HTML
